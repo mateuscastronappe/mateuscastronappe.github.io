@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from 'next/link';
 import backgroundImage from "@/img/backgroundImage.jpg";
 
 const Home = () => {
@@ -27,13 +27,19 @@ const Home = () => {
         <p className="text-lg md:text-2xl mb-8 max-w-2xl">
           Desenvolvedor Full-Stack transformando ideias em código com React, TypeScript e Node.js.
         </p>
-        <div className="flex gap-4">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105">
+<div className="flex gap-4">
+          <Link 
+            href="/pages/projetos" 
+            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105"
+          >
             Ver Meus Projetos
-          </button>
-          <button className="bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105">
+          </Link>
+          <Link 
+            href="/pages/contato" 
+            className="bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105"
+          >
             Entrar em Contato
-          </button>
+          </Link>
         </div>
       </div>
 
